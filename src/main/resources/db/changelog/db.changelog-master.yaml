@@ -1,1 +1,30 @@
 databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: "ribaumann"
+      changes:
+        - createTable:
+            tableName: "profiles"
+            columns:
+              - column:
+                  name: "id"
+                  type: "uuid"
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: "first_name"
+                  type: "text"
+              - column:
+                  name: "last_name"
+                  type: "text"
+                  constraints:
+                    nullable: false
+              - column:
+                  name: "username"
+                  type: "text"
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: "profile_pic"
+                  type: "text"

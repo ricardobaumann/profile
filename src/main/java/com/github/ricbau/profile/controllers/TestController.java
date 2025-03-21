@@ -1,4 +1,4 @@
-package com.github.ricbau.profile.config;
+package com.github.ricbau.profile.controllers;
 
 import com.github.ricbau.profile.output.Pong;
 import org.springframework.web.bind.annotation.GetMapping;
