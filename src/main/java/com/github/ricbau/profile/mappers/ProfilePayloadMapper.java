@@ -6,8 +6,8 @@ import org.mapstruct.Mapper;
 import org.springframework.core.convert.converter.Converter;
 
 @Mapper(componentModel = "spring")
-public interface ProfileMapper extends Converter<ProfilePayload, Profile> {
+public interface ProfilePayloadMapper extends Converter<Profile, ProfilePayload> {
 
-    Profile map(ProfilePayload profilePayload);
+    ProfilePayload map(Profile profile);
 
 }
